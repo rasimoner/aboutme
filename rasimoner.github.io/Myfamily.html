@@ -4,35 +4,51 @@
 	<head>
 		<title>html5 projects and using</title>
 		<meta charset="UTF-8">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	
 	<body>
-		<nav>
-			<ul>
-				<li><a href ="index.html">About me</a></li>
-				<li><a href ="Hometown.html">Hometown</a></li>
-				<li><a href ="Gallery.html">Picture Gallery</a></li>
-				<li><a href ="Contactme.html">Contact Me</a></li>
-				<li><a href ="Myfamily.html">My Family</a></li>
-				<li><a href ="Myhobbies.html">My Hobbies</a></li>
-				<li><a href ="Registiration Form.html">Registiration Form</a></li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid"/> 
+				<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">open!</button>
+    		</div> 
+			
+			<div class="collapse navbar-collapse" id="main_navbar">
+        		<ul class="nav navbar-nav">
+          			<li> <a href="index.html">About me</a></li> 	
+          			<li> <a href="Hometown.html">Hometown</a></li> 
+					<li> <a href="Contactme.html">Contact Me</a></li>					
+					<li class="active"> <a href="#">My Family</a></li>
+					<li> <a href="Myhobbies.html">My Hobbies</a></li>
+					<li> <a href="Gallery.html">Picture Gallery</a></li>
+					<li> <a href="Registiration Form.html">Registiration Form</a></li>                
+        		</ul>
+        	</div> 
+		</nav>		
+		<div class="container"/>		
+			<ol class="breadcrumb">
+				<li><a href="index.html">About me</a></li>
+				<li><a href="Myfamily.html">My Family</a></li>
+			</ol>	
 		<h1>My Family</h1>
-		<p>
 		<h2>My elementary family</h2> 
-			<img src ="images/myfamily.jpg"alt="father,mother" style ="width:480px;height:320px;">
-			<img src ="images/bigbrother.jpg"alt="big brother" style ="width:480px;height:320px;">
-			<img src ="images/mylittlebrother.jpg"alt="litte brother" style ="width:480px;height:320px;">
-		</p>
-		<p>
+			<a href="Elementaryfamily.html"><img class="album_cover" src="./images/myfathermother.jpg" alt="father,mother"style ="width:480px;height:320px;/></a>
+			
+			
+			<!--<img src ="images/bigbrother.jpg"alt="big brother" style ="width:480px;height:320px;">
+			<img src ="images/mylittlebrother.jpg"alt="litte brother" style ="width:480px;height:320px;"> -->
+		
+		
 		<h2>My extended family</h2> 
-			<img src = "images/grandfamily.jpg"alt="grandfamily" style ="width:480px;height:320px;">
-			<img src = "images/mycousins.jpg"alt="mycousins" style ="width:480px;height:320px;">
-			<img src = "images/cousins.jpg"alt="cousins" style ="width:480px;height:320px;">
-		</p>
-		
-		
+			<img class="album_cover" src = "images/grandfamily.jpg"alt="grandfamily" style ="width:480px;height:320px;">
+			<img class="album_cover" src = "images/mycousins.jpg"alt="mycousins" style ="width:480px;height:320px;">
+			<img class="album_cover" src = "images/cousins.jpg"alt="cousins" style ="width:480px;height:320px;">
+			
+		<script src="js/jquery.min.js"></script> 
+    
+		<script src="js/bootstrap.min.js"></script> 		
 	</body>
 	
 </html>
