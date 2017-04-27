@@ -4,22 +4,37 @@
 	<head>
 		<title>html5 projects and using</title>
 		<meta charset="UTF-8">
+		<link href="css/bootstrap.css" rel="stylesheet"> 
+		<link href="css/styles.css" rel="stylesheet"> 
 	</head>
 	
 	<body>
-		<nav>
-			<ul>
-				<li><a href ="index.html">About me</a></li>
-				<li><a href ="Hometown.html">Hometown</a></li>
-				<li><a href ="Gallery.html">Picture Gallery</a></li>
-				<li><a href ="Contactme.html">Contact Me</a></li>
-				<li><a href ="Myfamily.html">My Family</a></li>
-				<li><a href ="Myhobbies.html">My Hobbies</a></li>
-				<li><a href ="Registiration Form.html">Registiration Form</a></li>
-			</ul>
+		<nav class="container-fluid">
+			<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">open!</button>
+    		</div> <!-- /collapsed navbar -->
+
+			<!-- start un-collapsed navbar -->
+    		<div class="collapse navbar-collapse" id="main_navbar">
+        		<ul class="nav navbar-nav">
+          			<li><a href ="index.html">About me</a></li>	
+					<li><a href ="Hometown.html">Hometown</a></li>
+          			<li class="active"> <a href ="Gallery.html">Picture Gallery</a></li> 
+					<li><a href ="Contactme.html">Contact Me</a></li>
+					<li><a href ="Myfamily.html">My Family</a></li>
+					<li><a href ="Myhobbies.html">My Hobbies</a></li>
+					<li><a href ="Registiration Form.html">Registiration Form</a></li>
+        		</ul>
+        	</div> 
+
+      	
 		</nav>
 		
-		
+	<div class="container">
+		<ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="albums.html">Albums</a></li>
+      </ol>
 		<p>
 			<h2>I live in Eskisehir</h2>
 			<img src = "images/ben.jpg"alt ="ben1" style="width:480px;height:320px;">
@@ -31,6 +46,7 @@
 			<img src = "images/mygirlfriend.jpg"alt ="myfriends" style ="width:480px;height:320px;">
 			<img src = "images/myfriends.jpg"alt ="myfriends" style ="width:480px;height:320px;">
 		</p>
+	<div/>	
 	</body>
 	
 </html>
